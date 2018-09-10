@@ -124,7 +124,7 @@ export default class SiderDemo  extends React.Component {
             />
           </Header>
           <NumberList numbers={this.state.arr} />
-          <Content style={{ margin: '13px 16px 24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
+          <Content style={{ margin: '5px 16px 5px 16px', padding:5, background: '#fff', minHeight: 280 }}>
             {this.props.children}
           </Content>
         </Layout>

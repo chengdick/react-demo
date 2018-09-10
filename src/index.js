@@ -4,7 +4,7 @@ import 'antd/dist/antd.css'
 import './index.css';
 import Dome from './page/demo'
 import Loyout from './Layout/layout'
-import Ceshi from './page/ceshi'
+import Table from './page/table'
 import { Router, Route, Link, hashHistory,IndexRoute } from 'react-router'
 
 import '../src/config/globalConfig'
@@ -20,7 +20,7 @@ ReactDOM.render(
     <IndexRoute component={Dome}/> 
      <Route path="/demo" component={Dome}>
      </Route>
-     <Route path="/ceshi" component={Ceshi}>
+     <Route path="/table" component={Table}>
      </Route>
   </Route>
  </Router>,

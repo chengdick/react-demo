@@ -11,7 +11,7 @@ const JSONS=[{
     "icon":"mail",
     "key":"sub2",
     "children":[
-       { "url":"ceshi","name":"ceshi"}
+       { "url":"table","name":"table"}
     ]
 
 }]
