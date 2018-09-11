@@ -104,6 +104,7 @@ const post = (url, data, config) => {
  * @param {Object} config
  */
 const ajax = (config) => {
+  console.log(config)
   return axios(config).then(respnose => {
     return none(respnose)
   })
@@ -115,7 +116,7 @@ const ajax = (config) => {
  */
 const none = (response) => {
   // 在此处理后台反馈的错误码
-  if (response.code === '1') {
+  if (response) {
     return Promise.resolve(response)
   } else {
     return Promise.reject(response.message)

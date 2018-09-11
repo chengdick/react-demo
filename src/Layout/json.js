@@ -4,6 +4,7 @@ const JSONS=[{
     "key":"sub1",
     "children":[
        { "url":"demo","name":"表格"},
+       { "url":"redux","name":"状态管理"}
     ]
 
 },{
@@ -15,6 +16,5 @@ const JSONS=[{
     ]
 
 }]
-
 
 export default JSONS
