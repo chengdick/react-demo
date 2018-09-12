@@ -3,9 +3,12 @@ import './index.css';
 import Operation from './comment/screen'
 import Tablelist from './comment/tablelist'
 import Forms from './comment/form'
+import ulits from '../../component'
+ 
 import { Row, Col ,Input,Form,Button,Select} from 'antd';
 const FormItem = Form.Item;
 const { Option } = Select;
+
 
 export default class Table extends React.Component {
     constructor(props) {
@@ -14,6 +17,7 @@ export default class Table extends React.Component {
             data: [],
             pagination: {},
             loading: false,
+            height:ulits.srcoll()
         };
     }
 
@@ -33,16 +37,21 @@ export default class Table extends React.Component {
             loading: false,
             data: data.results,
             pagination,
+            
             });
         });
     }
     
     componentDidMount() {
+        window.onresize= () =>{
+            this.setState({
+                height: ulits.srcoll()
+            });
+        }
         this.fetch();
     }
     //查询
     handleSearch = e => {
-       console.log(e)
        this.fetch();
     };
 
