@@ -3,16 +3,8 @@ const JSONS=[{
     "icon":"mail",
     "key":"sub1",
     "children":[
-       { "url":"demo","name":"表格"},
+        { "url":"table","name":"table"},
        { "url":"redux","name":"状态管理"}
-    ]
-
-},{
-    "name":"表1",
-    "icon":"mail",
-    "key":"sub2",
-    "children":[
-       { "url":"table","name":"table"}
     ]
 
 }]

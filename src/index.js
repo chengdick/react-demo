@@ -21,7 +21,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory} onUpdate={updateHandle}>
     <Route path="/" component={Loyout}>
-      <IndexRoute component={Dome}/> 
+      <IndexRoute component={Table}/> 
       <Route path="/demo" component={Dome}>
       </Route>
       <Route path="/table" component={Table}>
