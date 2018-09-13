@@ -1,8 +1,10 @@
-const todos = (state = {demo:1}, action) => {
+const todos = (state = {}, action) => {
   switch (action.type) {
+
     case 'ADD_TODO':
+    console.log(action)
       return {
-        demo:2
+        demo:action.text
       }
     default:
       return state

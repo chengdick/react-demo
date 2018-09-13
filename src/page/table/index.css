@@ -8,3 +8,34 @@
 .header .btn-icon-color .anticon-filter {
   color: #2D85F3;
 }
+
+.relative{position: relative;}
+
+.listActive{
+    top: 56px;
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 0px;
+    height: 200px;
+}
+
+
+.active{
+  transition: all 0.3s;
+  width: 200px;
+  height: 200px;
+}
+
+
+@keyframes changeBig {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+
+  100% {
+    width: 200px;
+    height: 200px;
+  }
+
+}

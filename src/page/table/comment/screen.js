@@ -7,10 +7,12 @@ export default class Operation extends React.Component {
         super(props)
     }
 
+
     render() {
+       
         return (
-            <div className="header" > 
-                <Button className="btn-icon-color" icon="filter">筛选器</Button>
+            <div id="box" className="header"> 
+                <Button className="btn-icon-color" icon="filter"  onClick={this.props.onFilter} >筛选器</Button>
                 <Button className="ml15" type="primary" icon="plus">新建</Button>
             </div>
         )

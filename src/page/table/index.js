@@ -17,8 +17,11 @@ export default class Table extends React.Component {
             data: [],
             pagination: {},
             loading: false,
-            height:ulits.srcoll()
+            height:ulits.srcoll(),
+            flag:false
         };
+
+        this.textInput = React.createRef();
     }
 
     fetch = (params = {}) => {
@@ -49,7 +52,13 @@ export default class Table extends React.Component {
             });
         }
         this.fetch();
+       
     }
+
+    componentDidUpdate(prevProps, prevState) {  //数据跟新执行
+      
+    }
+
     //查询
     handleSearch = e => {
        this.fetch();
@@ -70,12 +79,21 @@ export default class Table extends React.Component {
         });
     }
 
+    onFilter=()=>{
+        // this.setState({
+        //     flag: !this.state.flag,
+        // });
+      console.log(this.textInput)
+    }
+
     render() {
+
         return (
-            <div>
+            <div className='relative'>
                 <Forms handleSearch={this.handleSearch}></Forms>
-                <Operation></Operation>
+                <Operation  onFilter={this.onFilter}></Operation>
                 <Tablelist {...this.state} handleTableChange={this.handleTableChange}></Tablelist>
+                <div  style={{'height':this.state.height+140}} className={`listActive ${this.state.flag?'active':''}`}></div>
             </div>
         )
     }   

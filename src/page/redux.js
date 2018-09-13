@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from 'antd';
+// import { bindActionCreators } from 'redux'
 import { connect} from 'react-redux'
-import { addTodo } from '../actions'
+import { actions } from '../actions'
 
 class Redux extends React.Component {
     constructor(props) {
@@ -9,11 +10,11 @@ class Redux extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props.store)
+        console.log(this.props)
     }
 
     btn =() =>{
-      this.props.dispatch(addTodo()) 
+      this.props.addTodo(2) 
     }
 
     render() {
@@ -31,5 +32,11 @@ const mapStateToProps = state => {
     }
 }
 
+const mapDispatchToProps = dispatch => {
+    return {
+        addTodo: (text) => dispatch(actions.addTodo(text))
+    }
+}
 
-export default connect(mapStateToProps)(Redux)
+
+export default connect(mapStateToProps,mapDispatchToProps)(Redux)

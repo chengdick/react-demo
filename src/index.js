@@ -20,15 +20,17 @@ function  updateHandle () {
 ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory} onUpdate={updateHandle}>
-    <Route path="/" component={Loyout}>
-      <IndexRoute component={Dome}/> 
-      <Route path="/demo" component={Dome}>
+    <React.Fragment>
+      <Route path="/" component={Loyout}>
+        <IndexRoute component={Dome}/> 
+        <Route path="/demo" component={Dome}>
+        </Route>
+        <Route path="/table" component={Table}>
+        </Route>
+        <Route path="/redux" component={Redux}>
+        </Route>
       </Route>
-      <Route path="/table" component={Table}>
-      </Route>
-      <Route path="/redux" component={Redux}>
-      </Route>
-    </Route>
+    </React.Fragment>
   </Router>
  </Provider>,
   document.getElementById('root')
