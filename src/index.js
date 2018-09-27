@@ -6,6 +6,8 @@ import Dome from './page/demo'
 import Loyout from './Layout/layout'
 import Table from './page/table'
 import Redux from './page/redux'
+import Checkbox from './page/checkbox'
+import Modal from './page/modal'
 import { Router, Route, Link, hashHistory,IndexRoute } from 'react-router'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
@@ -28,6 +30,10 @@ ReactDOM.render(
         <Route path="/table" component={Table}>
         </Route>
         <Route path="/redux" component={Redux}>
+        </Route>
+        <Route path="/checkbox" component={Checkbox}>
+        </Route>
+        <Route path="/modal" component={Modal}>
         </Route>
       </Route>
     </React.Fragment>

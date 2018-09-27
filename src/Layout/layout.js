@@ -84,7 +84,7 @@ export default class SiderDemo  extends React.Component {
     )
     
    
-    function NumberList(props) {
+   const  NumberList=(props)=> {
       const numbers = props.numbers;
       const listItems = numbers.map((number,index) =>
         <Breadcrumb.Item  key={index}>{number}</Breadcrumb.Item>
