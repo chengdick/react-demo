@@ -55,6 +55,11 @@ export default class Tablelist extends React.Component {
                 loading={this.props.loading}
                 onChange={this.handleTableChange}
                 scroll={{y:this.props.height}}
+                expandedRowRender={record => <p style={{ margin: 0 }}>12222222222222</p>}
+                expandRowByClick={this.expandRowByClick}
+                expandIconAsCell={false}
+                onExpand={this.onRowExpand}
+               
             />
             </div>
         )
