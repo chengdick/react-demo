@@ -97,7 +97,7 @@ export default class SiderDemo  extends React.Component {
       );
     }
     return (
-      <Layout className="demo" id="components-layout-demo-custom-trigger" style={{  background: '#fff' }}>
+      <Layout  id="components-layout-demo-custom-trigger" style={{  background: '#fff' }}>
         <Sider
           trigger={null}
           collapsible
