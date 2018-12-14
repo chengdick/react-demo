@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Menu, Icon ,Breadcrumb} from 'antd';
 import JSONS from "./json"
 import  './layout.css'
+import  './demo.styl'
 const { Header, Sider, Content } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -96,7 +97,7 @@ export default class SiderDemo  extends React.Component {
       );
     }
     return (
-      <Layout id="components-layout-demo-custom-trigger" style={{  background: '#fff' }}>
+      <Layout className="demo" id="components-layout-demo-custom-trigger" style={{  background: '#fff' }}>
         <Sider
           trigger={null}
           collapsible
