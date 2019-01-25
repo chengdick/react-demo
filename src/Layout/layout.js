@@ -22,11 +22,6 @@ export default class SiderDemo  extends React.Component {
   }
 
   componentWillMount(){
-    // console.log()
-    window.Axios.get("/json.json").then((data)=>{
-        console.log(data)
-    })
-  
     let url=this.props.location.pathname.replace("/","")
     let sub="";
     let arr=[];
@@ -53,7 +48,6 @@ export default class SiderDemo  extends React.Component {
     if(url===e.key){
       return
     }
-
     const path = `/#/${e.key}`
     window.location.href=path  //为什么用window跳转，react的路由重复点击有bug。
     let arr=[];
