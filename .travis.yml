@@ -24,6 +24,6 @@ deploy:
   # 使用GitHub的用户名和邮箱
   committer_from_gh: true
   # 目标分支
-  target_branch: develoer
+  target_branch: developer
   on:
-    branch: develoer
+    branch: developer
