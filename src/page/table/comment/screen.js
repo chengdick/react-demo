@@ -3,10 +3,6 @@ import { Button} from 'antd';
 
 export default class Operation extends React.Component {
 
-    constructor (props) {
-        super(props)
-    }
-
 
     render() {
        

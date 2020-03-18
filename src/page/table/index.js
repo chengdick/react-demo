@@ -5,9 +5,6 @@ import Tablelist from './comment/tablelist'
 import Forms from './comment/form'
 import ulits from '../../component'
  
-import { Row, Col ,Input,Form,Button,Select} from 'antd';
-const FormItem = Form.Item;
-const { Option } = Select;
 
 
 export default class Table extends React.Component {

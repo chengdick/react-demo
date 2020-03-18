@@ -59,6 +59,8 @@ import axios from 'axios'
         case 504:
           console.log('504')
           break
+         default:
+          break
       }
       return Promise.reject(error.response.data)
     }

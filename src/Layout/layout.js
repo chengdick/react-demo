@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { Layout, Menu, Icon ,Breadcrumb} from 'antd';
 import JSONS from "./json"
@@ -98,7 +99,7 @@ export default class SiderDemo  extends React.Component {
           style={{  background: '#fff' }}
         >
           <div className="logo">
-            <img src="https://antd-admin.zuiidea.com/public/logo.svg"/>
+            <img src={'https://antd-admin.zuiidea.com/public/logo.svg'}/>
             {this.state.collapsed?(null ):(<span>AntD Admin</span>)}
           </div>
           <Menu theme="light" mode="inline" 

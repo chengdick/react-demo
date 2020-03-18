@@ -8,8 +8,8 @@ export default class  XfCheckboxgroup extends React.Component {
 
       state = {
         checkedList: this.props.defaultCheckedList,
-        indeterminate: (this.props.defaultCheckedList.length>0)&&(this.props.defaultCheckedList.length!=this.props.allcheckbox.length),
-        checkAll:  (this.props.defaultCheckedList.length!=0)&&(this.props.defaultCheckedList.length==this.props.allcheckbox.length),
+        indeterminate: (this.props.defaultCheckedList.length>0)&&(Number(this.props.defaultCheckedList.length)!==this.props.allcheckbox.length),
+        checkAll:  (Number(this.props.defaultCheckedList.length)!==0)&&(this.props.defaultCheckedList.length===this.props.allcheckbox.length),
         options:this.props.allcheckbox
       };
       onChange = (checkedList) => {

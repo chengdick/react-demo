@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button,Table} from 'antd';
+import {Table} from 'antd';
 
 const columns = [{
     title: 'Name',
@@ -22,10 +22,6 @@ const columns = [{
   
 
 export default class Tablelist extends React.Component {
-
-    constructor (props) {
-        super(props)
-    }
 
     handleTableChange = (pagination, filters, sorter) => {
         this.props.handleTableChange(pagination, filters, sorter);

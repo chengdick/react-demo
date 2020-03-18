@@ -5,9 +5,6 @@ import { connect} from 'react-redux'
 import { actions } from '../actions'
 
 class Redux extends React.Component {
-    constructor(props) {
-     super(props)
-    }
 
     componentDidMount() {
         console.log(this.props)

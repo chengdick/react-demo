@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox, Tag, Icon, Row, Col ,Input} from 'antd';
+import { Checkbox, Tag, Icon, Row, Col} from 'antd';
 import CspModal from '../csp-modal';
 import './index.scss';
 const CheckboxGroup = Checkbox.Group;

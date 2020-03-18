@@ -3,9 +3,6 @@ function formatDate(date) {
     return date.toLocaleDateString();
 }
 export default class Comment extends React.Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
 
         return (
